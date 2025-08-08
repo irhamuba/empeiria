@@ -1,4 +1,4 @@
-# 🤖 Empeiria Testnet Faucet Bot
+# 🤖 Empeiria Testnet Bot
 
 An interactive CLI tool for Empeiria testnet that allows automated token distribution with customizable parameters.
 
