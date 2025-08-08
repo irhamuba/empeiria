@@ -1,0 +1,52 @@
+{
+  "name": "empe-bot",
+  "version": "1.0.0",
+  "description": "Empeiria testnet bot for automated address scraping and token transfers",
+  "main": "main.js",
+  "bin": {
+    "empe-bot": "./main.js"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "scrape": "node scraper.js",
+    "send": "node send-from-file.js",
+    "send-random": "node send-random.js",
+    "scrape-and-send": "node scraper.js && node send-from-file.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@cosmjs/stargate": "^0.32.4",
+    "@cosmjs/proto-signing": "^0.32.4",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "puppeteer": "^22.15.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.1"
+  },
+  "keywords": [
+    "empeiria",
+    "cosmos",
+    "blockchain",
+    "bot",
+    "testnet",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/empe-bot.git"
+  },
+  "homepage": "https://github.com/yourusername/empe-bot#readme",
+  "bugs": {
+    "url": "https://github.com/yourusername/empe-bot/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
